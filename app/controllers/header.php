@@ -20,13 +20,13 @@ Class Header extends Controller
 
         $pageClassMap = [
             'home' => 'nav_elmt',
-            'seancesgerant' => 'nav_elmt',
-            'cinemasalle' => 'nav_elmt'
+            'seancesclient' => 'nav_elmt',
+            'sallegerant' => 'nav_elmt'
         ];
         
         }elseif (isset($_SESSION["username"]) && htmlspecialchars($_SESSION['type'])=='admin'){
             $pageClassMap = [
-                
+                'home' => 'Accueil',
                 'adminusers' => 'nav_elmt',
                 'faq' => 'nav_elmt'
             ];
@@ -35,8 +35,8 @@ Class Header extends Controller
 
             $pageClassMap = [
                 'home' => 'nav_elmt',
-                'seancesflorent' => 'nav_elmt',
-                'salles' => 'nav_elmt'
+                'seancesclient' => 'nav_elmt',
+                'cinema' => 'nav_elmt'
             ];
            
             
@@ -51,7 +51,7 @@ Class Header extends Controller
         $pageName=[
             'home' => 'Accueil',
             'seancesgerant' => 'Séances',
-            'cinemasalle' => 'Salles'
+            'sallegerant' => 'Salles'
         ];
         }elseif (isset($_SESSION["username"]) && htmlspecialchars($_SESSION['type'])=='admin'){
 
@@ -64,8 +64,8 @@ Class Header extends Controller
 
             $pageName=[
                 'home' => 'Accueil',
-                'seancesflorent' => 'Séances',
-                'salles' => 'Salles'
+                'seancesclient' => 'Séances',
+                'cinema' => 'Salles'
             ];
         }
         return $pageName;
@@ -78,7 +78,7 @@ Class Header extends Controller
     }
     function getCSS(){
         $currentPage=$this->getCurrentPage();
-        if($currentPage=="home"){
+        if($currentPage=="home" || $currentPage=="public"){
             return ASSETS."css/index.css";
         }else{
             return ASSETS."css/".$currentPage.".css";

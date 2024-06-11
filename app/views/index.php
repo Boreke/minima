@@ -4,9 +4,10 @@
 <html lang="en">
 
 <?php 
-        require "../app/controllers/header.php";
-        $header= new Header();
-        $header->displayHeader($data['page_title']);
+    require "../app/controllers/header.php";
+    $header= new Header();
+    $header->displayHeader($data['page_title']);
+
 ?>
 <body>
     <main>
@@ -25,7 +26,7 @@
                     Réserver une séance de cinéma n’a jamais été aussi simple et pratique ! En quelques clics, 
                     assurez-vous une place pour le film de votre choix, à l’horaire qui vous convient le mieux. 
                 </p>
-                <a href="<?=ROOT?>seancesflorent"><button class="button1">Réserver</button></a>
+                <a href="<?=ROOT?>seancesclient"><button class="button1">Réserver</button></a>
             </div>
             <div class="right2">
                 <h2>A l'affiche :</h2>

@@ -46,11 +46,11 @@
                 <div id="myDropdown" class="dropdown-content">
                     <a href="<?=ROOT?>profil">Mon Profil</a>
                     <a href="<?=ROOT?>forum">Forum</a>
-                    <?php if (isset($_SESSION["real_type"])): ?>
-                        <a href="<?=ROOT?>logoutadmin">Back to admin</a>
-                    <?php elseif(isset($_SESSION["username"])):  ?>
+                    <?php //if (isset($_SESSION["real_type"])): ?>
+                        <!--<a href="<?=ROOT?>logoutadmin">Back to admin</a>-->
+                    <?php //elseif(isset($_SESSION["username"])):  ?>
                         <a href="<?=ROOT?>logout">Logout</a>
-                    <?php endif; ?> 
+                    <?php //endif; ?> 
                     
                 </div>
             </div>

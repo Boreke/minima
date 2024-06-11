@@ -32,7 +32,7 @@
                 <input type="password" placeholder="Mot de passe" class="id" id="password" name="password">
                 <button class="buttonconnexion"> Connexion </button>
                 <div class="crétioncompte">
-                    <p class="inline">Vous n'avez pas de compte ?</p> <a href="<?=ROOT?>nouveaucompte" class="lienverscreation">Créer un compte</a>
+                    <p class="inline">Vous n'avez pas de compte ?</p> <a href="<?=ROOT?>signup" class="lienverscreation">Créer un compte</a>
                 </div>
                 
             </form>

@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <a class="topleft" href="<?=ROOT?>home">
+        <div class="Logo_Nom">
+            <img src="<?=ASSETS?>img/Falcon (1).png" alt="Logo" class="logo" >
+            <p class="Nom">E-GLE</p>
+        </div>
+    </a>
   <section class="container">
     <div class="connexion">
       <form class="inputs" id="signup" method="post" novalidate>
