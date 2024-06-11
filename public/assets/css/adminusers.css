@@ -1,0 +1,144 @@
+* {
+    
+    color: #FFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    background: rgb(9,6,67);
+    background: linear-gradient(90deg, rgba(9,6,67,1) 0%, rgba(0,0,0,1) 42%, rgba(15,80,93,1) 100%);
+    overflow-x: hidden;
+    margin: 0;
+    min-height:100vh;
+}
+main {
+    flex: 1;
+}
+
+.container_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.h1{
+    font-size: 2em;
+    font-weight: bold;  
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.id{
+    color: #777;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 5px 15px;
+    border: 5px solid #818181;
+    background: rgba(217, 217, 217, 0.00);
+}
+
+.id:focus{
+    color:white;
+    border-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 4vw;
+}
+
+table {
+    width: 100%;
+    background-color: #151515;
+    overflow-y: scroll;
+    overscroll-behavior-y: auto;
+}
+
+th, td {
+    padding: 30px;
+    text-align: left;
+}
+.top {
+    background-color: #202020;
+    padding: 60px 64px;
+    border-radius: 20px 20px 0 0;
+}
+.listcontainer {
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;    
+}
+
+.supp {
+    background-color: red;
+    padding: 1vw;
+    border-radius: 20px;
+    border: 0;
+    align-self: center;
+    cursor: pointer;
+    filter: none;
+}
+.supp:hover {
+    background-color: rgb(255, 115, 115);
+}
+
+.login, .search {
+    background-color: rgb(255, 255, 255);
+    padding: 1vw;
+    border-radius: 20px;
+    align-self: center;
+    cursor: pointer;
+    color: black;
+    filter: none;
+}
+
+.login:hover, .search:hover {
+    background-color: #545454;
+}
+
+select {
+    font-family: Roboto;
+    box-shadow: none;
+    flex: 1;
+    margin: 1vh;
+    color: #fff;
+    background-color: grey;
+    background-image: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: auto;
+    height: 2vw;
+    border: 5px solid grey;
+    font-size: 15px;
+}
+
+select:hover{
+    background-color: #545454;
+    border:5px solid #545454;
+}
+
+select option{
+    background-color: black;
+}
+
+
